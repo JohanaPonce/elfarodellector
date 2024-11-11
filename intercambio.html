@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intercambio de Libros - El Faro del Lector</title>
+    <link rel="icon" href="img/faro.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+            <div class="container">
+                <img src="img/faro.ico" alt="logo faro" class="logo">
+                <span class="navbar-brand text-white">El Faro del Lector</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="catalogo.html">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="intercambio.html">Intercambio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="reseñas.html">Reseñas</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="acerca.html">Acerca</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#carrito">Carrito</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#cuenta">Mi Cuenta</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="politicas.html">Políticas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="explanation">
+            <h1>¿Cómo Funciona el Intercambio de Libros?</h1>
+            <p>En nuestro programa de intercambio de libros, puedes ofrecer libros que ya no necesites y, a cambio, recibir otros libros que te interesen. Es una forma excelente de renovar tu biblioteca personal sin gastar dinero.</p>
+        </section>
+
+        <section class="available-books">
+            <h2>Libros Disponibles para Intercambio</h2>
+            <div class="book-list">
+                <div class="book-card">
+                    <img src="img/lafelicidad.jpg" class="img-libro" alt="Libro 1">
+                    <h3>La Felicidad</h3>
+                    <p>Obra de Gabriel Rolon que explora cómo encontrar el bienestar y entender nuestras emociones</p>
+                    <a href="#" class="btn">Intercambiar</a>
+                </div>
+                <div class="book-card">
+                    <img src="img/harrypotter.jpg" class="img-libro" alt="Libro 2">
+                    <h3>Harry Potter y las Reliquias de la Muerte</h3>
+                    <p>Ultimo libro de la famosa saga de J.K. Rowling.</p>
+                    <a href="#" class="btn">Intercambiar</a>
+                </div>
+                <div class="book-card">
+                    <img src="img/elprincipito.jpg" class="img-libro" alt="Libro 3">
+                    <h3>El Principito</h3>
+                    <p>Una fábula poética que nos enseña sobre la inocencia y la sabiduría de Antoine de Saint-Exupéry</p>
+                    <a href="#" class="btn">Intercambiar</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <div>
+                <h5>¿Cómo evalúo el estado de un libro?</h5>
+                <p>Proporcionamos guías sobre cómo clasificar el estado de los libros. Asegúrate de ser honesto sobre las condiciones para que todos estén satisfechos con el intercambio.</p>
+            </div>
+            <div>
+                <h5>¿Qué libros se pueden intercambiar?</h5>
+                <p>Cualquier libro que esté en buen estado y que cumpla con nuestras pautas. Asegúrate de revisar nuestras normas de <a href="politicas.html#politicas-intercambio">intercambio.</a></p>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>Testimonios</h2>
+            <blockquote>
+                <p>"El intercambio de libros me ha permitido conocer nuevas lecturas y hacer amigos. ¡Lo recomiendo!" - Paula Vera</p>
+            </blockquote>
+            <blockquote>
+                <p>"Una gran forma de renovar mi colección de libros sin gastar mucho dinero." - Claudio Lopez</p>
+            </blockquote>
+        </section>
+
+        <section class="contact">
+            <h2>Contacto</h2>
+            <p>Si tienes dudas, no dudes en <a href="contacto.html">contactarnos</a>.</p>
+        </section>
+    </main>
+
+
+    <footer class="bg-primary text-white text-center mt-5">
+        <div class="container">
+            <p>&copy; 2024 El Faro del Lector</p>
+            <a href="politicas.html" class="text-white">Políticas</a> | 
+            <a href="acerca.html" class="text-white">Acerca</a> | 
+            <a href="contacto.html" class="text-white">Contacto</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

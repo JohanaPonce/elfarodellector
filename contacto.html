@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - El Faro del Lector</title>
+    <link rel="icon" href="img/faro.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+            <div class="container">
+                <img src="img/faro.ico" alt="logo faro" class="logo">
+                <span class="navbar-brand text-white">El Faro del Lector</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="catalogo.html">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="intercambio.html">Intercambio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="reseñas.html">Reseñas</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="acerca.html">Acerca</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#carrito">Carrito</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#cuenta">Mi Cuenta</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="politicas.html">Políticas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="main-title">Contacto</h1>
+            <p>Para cualquier duda, completa el formulario o contáctanos a través de nuestras redes sociales.</p>
+
+            <div class="contact-container">
+              
+                <div class="contact-form">
+                    <h2>Formulario de Contacto</h2>
+                    <form action="https://formspree.io/f/mldebral" method="post">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="text" id="phone" name="phone" placeholder="Tu teléfono">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" placeholder="Tu mensaje" rows="4" required></textarea>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="submit" class="btn submit-btn">Enviar</button>
+                            <button type="reset" class="btn reset-btn">Borrar</button>
+                        </div>
+                    </form>
+                </div>
+
+           
+                <div class="contact-info">
+                    <h2>Dirección</h2>
+                    <p>San Juan y Boedo</p>
+
+              
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094935!2d144.9630578153203!3d-37.81362797975177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0b7c7d49%3A0x502b64d9a47bbf2e!2sSan%20Juan%20y%20Boedo!5e0!3m2!1ses!2sar!4v1630617615127!5m2!1ses!2sar" 
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                    <h2>Contacto Directo</h2>
+                    <p><strong>Teléfono:</strong> 1234-5678</p>
+                    <p><strong>Email:</strong> contacto@farolector.com</p>
+
+                    <h2>Redes Sociales</h2>
+                    <p>
+                        <a href="https://www.facebook.com/" class="social-link">Facebook</a> |
+                        <a href="https://x.com/" class="social-link">Twitter</a> |
+                        <a href="https://www.instagram.com/" class="social-link">Instagram</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="bg-primary text-white text-center mt-5">
+        <div class="container">
+            <p>&copy; 2024 El Faro del Lector</p>
+            <a href="politicas.html" class="text-white">Políticas</a> | 
+            <a href="acerca.html" class="text-white">Acerca</a> | 
+            <a href="contacto.html" class="text-white">Contacto</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

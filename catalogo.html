@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - El Faro del Lector</title>
+    <link rel="icon" href="img/faro.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+            <div class="container">
+                <img src="img/faro.ico" alt="logo faro" class="logo">
+                <span class="navbar-brand text-white">El Faro del Lector</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="catalogo.html">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="intercambio.html">Intercambio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="reseñas.html">Reseñas</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="acerca.html">Acerca</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#carrito">Carrito</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#cuenta">Mi Cuenta</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="politicas.html">Políticas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="mt-5">Catálogo de Libros</h1>
+            <p>Aquí puedes explorar nuestra amplia selección de libros.</p>
+            
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar libros...">
+            </div>
+            
+            <div class="books-grid">
+                <div class="book-card">
+                    <img src="img/romper.jpg" alt="Romper el Circulo">
+                    <div class="card-body">
+                        <h5 class="card-title">Romper el Circulo</h5>
+                        <p class="card-text">Una historia de superación personal de Colleen Hoover.</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="img/rayuela.jpg" alt="Rayuela">
+                    <div class="card-body">
+                        <h5 class="card-title">Rayuela</h5>
+                        <p class="card-text">Un clásico de Julio Cortázar.</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="img/eltunel.jpg" alt="El Tunel">
+                    <div class="card-body">
+                        <h5 class="card-title">El Tunel</h5>
+                        <p class="card-text">Novela de Ernesto Sabato que atrapa al lector.</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="img/cienaños.jpg" alt="Cien años de Soledad">
+                    <div class="card-body">
+                        <h5 class="card-title">Cien años de Soledad</h5>
+                        <p class="card-text">Una obra maestra de Gabriel García Márquez.</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="img/casaneville.jpg" alt="La Casa Neville">
+                    <div class="card-body">
+                        <h5 class="card-title">La Casa Neville</h5>
+                        <p class="card-text">Una intrigante novela familiar de Florencia Bonelli.</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="img/elamor.jpg" alt="El Amor en los Tiempos del Colera">
+                    <div class="card-body">
+                        <h5 class="card-title">El Amor en los Tiempos del Colera</h5>
+                        <p class="card-text">Otra joya de Gabriel García Márquez.</p>
+                        <a href="#" class="btn">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="bg-primary text-white text-center mt-5">
+        <div class="container">
+            <p>&copy; 2024 El Faro del Lector</p>
+            <a href="politicas.html" class="text-white">Políticas</a> | 
+            <a href="acerca.html" class="text-white">Acerca</a> | 
+            <a href="contacto.html" class="text-white">Contacto</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

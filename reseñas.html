@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas - El Faro del Lector</title>
+    <link rel="icon" href="img/faro.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+            <div class="container">
+                <img src="img/faro.ico" alt="logo faro" class="logo">
+                <span class="navbar-brand text-white">El Faro del Lector</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="catalogo.html">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="intercambio.html">Intercambio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="reseñas.html">Reseñas</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="acerca.html">Acerca</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#carrito">Carrito</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#cuenta">Mi Cuenta</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="politicas.html">Políticas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <br>
+            <h1 class="main-title">Reseñas de Libros</h1>
+            
+            <section id="reseñas-destacadas">
+                <h2>Reseñas Destacadas</h2>
+                <div class="review-list">
+                    <div class="review-card">
+                        <h5>"Una experiencia inolvidable!"</h5>
+                        <p>"La narrativa es cautivadora y los personajes son memorables." - Usuario A</p>
+                        <p><strong>Puntuación:</strong> ★★★★☆</p>
+                    </div>
+                    <div class="review-card">
+                        <h5>"Imprescindible para cualquier amante de la literatura."</h5>
+                        <p>"Una joya que no te puedes perder." - Usuario B</p>
+                        <p><strong>Puntuación:</strong> ★★★★★</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="deja-tu-reseña">
+                <h3>Deja tu Reseña</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Tu Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reseña">Tu Reseña:</label>
+                        <textarea class="form-control" id="reseña" rows="3" placeholder="Escribe tu reseña aquí" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="puntuacion">Puntuación:</label>
+                        <select class="form-control" id="puntuacion" required>
+                            <option value="">Selecciona una opción</option>
+                            <option>1 estrella</option>
+                            <option>2 estrellas</option>
+                            <option>3 estrellas</option>
+                            <option>4 estrellas</option>
+                            <option>5 estrellas</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Enviar Reseña</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-primary text-white text-center mt-5">
+        <div class="container">
+            <p>&copy; 2024 El Faro del Lector</p>
+            <a href="politicas.html" class="text-white">Políticas</a> | 
+            <a href="acerca.html" class="text-white">Acerca</a> | 
+            <a href="contacto.html" class="text-white">Contacto</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
