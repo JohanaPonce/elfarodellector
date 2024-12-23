@@ -7,6 +7,7 @@
     <link rel="icon" href="img/faro.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,7 +27,12 @@
                         <li class="nav-item"><a class="nav-link text-white" href="reseñas.html">Reseñas</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="acerca.html">Acerca</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#carrito">Carrito</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#" id="abrir-carrito">
+                                <i class="fas fa-shopping-cart" id="carrito-logo" style="font-size: 24px; margin-right: 8px;"></i>
+                                <span id="carrito-count">0</span>
+                            </a>
+                        </li>
                         <li class="nav-item"><a class="nav-link text-white" href="#cuenta">Mi Cuenta</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="politicas.html">Políticas</a></li>
                     </ul>
@@ -59,7 +65,7 @@
                             <h5 class="card-title">Cien años de soledad</h5>
                             <p class="card-text">Una obra maestra de Gabriel García Márquez.</p>
                             <div class="button-container">
-                            <a href="#" class="btn">Comprar</a>
+                            <a href="#" class="btn" data-precio="20">Comprar</a>
                         </div>
                     </div>
                     </div>
@@ -69,7 +75,7 @@
                             <h5 class="card-title">El túnel</h5>
                             <p class="card-text">Novela de Ernesto Sabato que atrapa al lector.</p>
                             <div class="button-container">
-                            <a href="#" class="btn">Comprar</a>
+                            <a href="#" class="btn" data-precio="50">Comprar</a>
                         </div>
                         </div>
                 </div>
@@ -80,7 +86,7 @@
                             <p class="card-text">Un clásico de Julio Cortázar.</p>
                             <br>
                             <div class="button-container">
-                            <a href="#" class="btn">Comprar</a>
+                            <a href="#" class="btn" data-precio="40">Comprar</a>
                         </div>
                         </div>
                 </div>
@@ -91,7 +97,7 @@
                             <p class="card-text">Otra joya de Gabriel García Márquez.</p>
                             <br>
                             <div class="button-container">
-                            <a href="#" class="btn">Comprar</a>
+                            <a href="#" class="btn" data-precio="60">Comprar</a>
                         </div>
                         </div>
                 </div>
@@ -102,7 +108,7 @@
                             <p class="card-text">Saga que entrelaza el amor y lo sobrenatural de Isabel Allende</p>
                             <br>
                             <div class="button-container">
-                            <a href="#" class="btn">Comprar</a>
+                            <a href="#" class="btn" data-precio="20">Comprar</a>
                         </div>
                         </div>
                 </div>
@@ -113,11 +119,12 @@
                             <p class="card-text">Una colección de cuentos de Jorge Luis Borges.</p>
                             <br>
                             <div class="button-container">
-                            <a href="#" class="btn">Comprar</a>
+                            <a href="#" class="btn" data-precio="50">Comprar</a>
                             </div>
                         </div>
             </div>
         </section>
+
 
         <section id="novedades">
             <h2>Novedades</h2>
@@ -206,6 +213,34 @@
     </div>
 </section>
 
+
+<div class="modal fade" id="modalCarrito" tabindex="-1" role="dialog" aria-labelledby="modalCarritoLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalCarritoLabel">Carrito de Compras</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul id="productos-carrito">
+                   
+                </ul>
+                <div id="total-carrito">
+                    <p><strong>Total: $0.00</strong></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-danger" onclick="vaciarCarrito()">Vaciar Carrito</button>
+                <button type="button" class="btn btn-primary" onclick="realizarCompra()">Realizar Compra</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 </main>
 
     <footer class="bg-primary text-white text-center py-4">
@@ -219,5 +254,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+
 </body>
 </html>
